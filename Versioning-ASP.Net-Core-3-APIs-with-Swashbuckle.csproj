@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Versioning_ASP.Net_Core_3_APIs_with_Swashbuckle</RootNamespace>
+  </PropertyGroup>
+
+
+</Project>
