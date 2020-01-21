@@ -14,6 +14,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json.Serialization;
 using Swashbuckle.AspNetCore.SwaggerGen;
+using Versioning_ASP.Net_Core_3_APIs_with_Swashbuckle.Services;
 using Versioning_ASP.Net_Core_3_APIs_with_Swashbuckle.Swagger;
 
 namespace Versioning_ASP.Net_Core_3_APIs_with_Swashbuckle
@@ -31,6 +32,8 @@ namespace Versioning_ASP.Net_Core_3_APIs_with_Swashbuckle
         public void ConfigureServices(IServiceCollection services)
         {
         
+
+                services.AddScoped<IProductService,ProductService>();
             services.AddControllers();
              services.AddApiVersioning(o =>
             {
@@ -74,6 +77,7 @@ namespace Versioning_ASP.Net_Core_3_APIs_with_Swashbuckle
                 {
                     options.SerializerSettings.ContractResolver = new DefaultContractResolver();
                 });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

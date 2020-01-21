@@ -9089,11 +9089,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/baran/Desktop/outer/Versioning-ASP.Net-Core-3-APIs-with-Swashbuckle/Versioning-ASP.Net-Core-3-APIs-with-Swashbuckle.csproj",
+      "projectUniqueName": "/home/baran/Desktop/Versioning-ASP.Net-Core-3-APIs-with-Swashbuckle/Versioning-ASP.Net-Core-3-APIs-with-Swashbuckle.csproj",
       "projectName": "Versioning-ASP.Net-Core-3-APIs-with-Swashbuckle",
-      "projectPath": "/home/baran/Desktop/outer/Versioning-ASP.Net-Core-3-APIs-with-Swashbuckle/Versioning-ASP.Net-Core-3-APIs-with-Swashbuckle.csproj",
+      "projectPath": "/home/baran/Desktop/Versioning-ASP.Net-Core-3-APIs-with-Swashbuckle/Versioning-ASP.Net-Core-3-APIs-with-Swashbuckle.csproj",
       "packagesPath": "/home/baran/.nuget/packages/",
-      "outputPath": "/home/baran/Desktop/outer/Versioning-ASP.Net-Core-3-APIs-with-Swashbuckle/obj/",
+      "outputPath": "/home/baran/Desktop/Versioning-ASP.Net-Core-3-APIs-with-Swashbuckle/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/baran/.nuget/NuGet/NuGet.Config"
