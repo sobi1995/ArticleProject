@@ -7,5 +7,6 @@ namespace Versioning_ASP.Net_Core_3_APIs_with_Swashbuckle.Services
     public interface IProductService
     {
          List<Product> GetAllAsync();
+        Product GetById(int id);
     }
 }

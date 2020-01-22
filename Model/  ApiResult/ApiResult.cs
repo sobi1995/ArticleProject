@@ -1,28 +1,76 @@
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+
 namespace Versioning_ASP.Net_Core_3_APIs_with_Swashbuckle.Model._ApiResult
 {
     public class ApiResult
     {
         public bool IsSuccess { get; set; }
+        public ApiResultStatusCode StatusCode { get; set; }
+
         public string Message { get; set; }
-        public StatusApiResult StatusApiResult { get; set; }
+
+        public ApiResult(bool isSuccess, ApiResultStatusCode statusCode, string message = null)
+        {
+            IsSuccess = isSuccess;
+            StatusCode = statusCode;
+            Message = message;
+        }
+
+        #region Implicit Operators
+        public static implicit operator ApiResult(OkResult result)
+        {
+            return new ApiResult(true, ApiResultStatusCode.Success);
+        }
+
+
+        public static implicit operator ApiResult(NotFoundResult result)
+        {
+            return new ApiResult(false, ApiResultStatusCode.NotFound);
+        }
+        #endregion
     }
-    public class ApiResult<TData>:ApiResult{
-public TData Data { get; set; }
 
-public static implicit operator  ApiResult<TData>(TData result){
-    return new ApiResult<TData>{
-        Data=result,
-        IsSuccess=true,
-        Message="S",
-        StatusApiResult=StatusApiResult.one
-    };
-}
-
-    }
-
-    public enum StatusApiResult
+    public class ApiResult<TData> : ApiResult
+        where TData : class
     {
-        one,
-        tow
+
+        public TData Data { get; set; }
+
+        public ApiResult(bool isSuccess, ApiResultStatusCode statusCode, TData data, string message = null)
+            : base(isSuccess, statusCode, message)
+        {
+            Data = data;
+        }
+
+        #region Implicit Operators
+        public static implicit operator ApiResult<TData>(TData data)
+        {
+            return new ApiResult<TData>(true, ApiResultStatusCode.Success, data);
+        }
+
+        public static implicit operator ApiResult<TData>(OkResult result)
+        {
+            return new ApiResult<TData>(true, ApiResultStatusCode.Success, null);
+        }
+
+        public static implicit operator ApiResult<TData>(NotFoundResult result)
+        {
+            return new ApiResult<TData>(false, ApiResultStatusCode.NotFound, null);
+        }
+
+
+        #endregion
+    }
+
+    public enum ApiResultStatusCode
+    {
+        Success = 0,
+        ServerError = 1,
+        NotFound = 2,
+
+
     }
 }
