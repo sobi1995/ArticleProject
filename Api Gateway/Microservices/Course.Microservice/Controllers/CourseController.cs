@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Course.Microservice.Controllers
 {
-    [Route("api/[Action][controller]")]
+    [Route("api/[controller]/[Action]")]
     [ApiController]
     public class CourseController : ControllerBase
     {
