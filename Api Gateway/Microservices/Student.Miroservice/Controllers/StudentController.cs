@@ -20,17 +20,17 @@ namespace Student.Microservice.Controllers
 
         }
 
-        [HttpGet("{courseId}")]
-        public async Task<IActionResult> GetCourse(int? courseId)
+        [HttpGet("{studentId}")]
+        public async Task<IActionResult> GetCourse(int? studentId)
         {
-            if (courseId == null)
+            if (studentId == null)
             {
                 return BadRequest();
             }
 
             try
             {
-                var Course =   _studentService.GetCourse(courseId);
+                var Course =   _studentService.GetCourse(studentId);
 
                 if (Course == null)
                 {
@@ -82,19 +82,19 @@ namespace Student.Microservice.Controllers
             return BadRequest();
         }
      
-        [HttpDelete("{CourseId}")]
-        public async Task<IActionResult> DeleteCourse(int? courseId)
+        [HttpDelete("{studentId}")]
+        public async Task<IActionResult> DeleteCourse(int? studentId)
         {
             int result = 0;
 
-            if (courseId == null)
+            if (studentId == null)
             {
                 return BadRequest();
             }
 
             try
             {
-                result =   _studentService.DeleteCourse(courseId);
+                result =   _studentService.DeleteCourse(studentId);
                 if (result == 0)
                 {
                     return NotFound();

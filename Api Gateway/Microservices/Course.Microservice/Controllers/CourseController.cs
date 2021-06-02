@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Course.Microservice.Controllers
 {
-    [Route("api/[controller]/[Action]")]
+    [Route("api/[controller]")]
     [ApiController]
     public class CourseController : ControllerBase
     {
@@ -20,17 +20,17 @@ namespace Course.Microservice.Controllers
 
         }
 
-        [HttpGet]
-        public async Task<IActionResult> GetCourse(int? CourseId)
+        [HttpGet("{courseId}")]
+        public async Task<IActionResult> GetCourse(int? courseId)
         {
-            if (CourseId == null)
+            if (courseId == null)
             {
                 return BadRequest();
             }
 
             try
             {
-                var Course =   _courseService.GetCourse(CourseId);
+                var Course =   _courseService.GetCourse(courseId);
 
                 if (Course == null)
                 {
@@ -82,7 +82,7 @@ namespace Course.Microservice.Controllers
             return BadRequest();
         }
 
-        [HttpDelete]
+        [HttpDelete("{courseId}")]
         public async Task<IActionResult> DeleteCourse(int? CourseId)
         {
             int result = 0;

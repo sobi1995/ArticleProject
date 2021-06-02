@@ -7,7 +7,12 @@
 		"17b28e62-c5da-3812-4825-af071a71e5de",
 		"a464368a-e241-2e73-ab00-c4d365a59f90",
 		"107d0003-7d9a-fda1-7cba-124286dbcd1e",
-		"2c54c2d0-ad1f-cd94-3c21-67fd5f4d575f"
+		"2c54c2d0-ad1f-cd94-3c21-67fd5f4d575f",
+		"ab78228c-071f-a0f3-2285-40c1669e63d3",
+		"d85e49e7-442b-8e00-4934-cabb5e436828",
+		"eaff39ea-f46f-5c00-325a-d8c30067de31",
+		"5dda1717-4715-d387-2ebd-1d7b40df772e",
+		"ee905b73-c980-4bf8-956f-4717214e9095"
 	],
 	"folders": [],
 	"folders_order": [],
@@ -89,6 +94,37 @@
 			"helperAttributes": {}
 		},
 		{
+			"id": "5dda1717-4715-d387-2ebd-1d7b40df772e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{domain}}/course",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "2461def6-63f6-2e40-0d0e-b78899060f78",
+			"data": [],
+			"dataMode": "raw",
+			"name": "{{domain}}/course",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1622617046637,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n  \"id\": 0,\r\n  \"name\": \"string\",\r\n  \"unit\": 0\r\n}"
+		},
+		{
 			"id": "a464368a-e241-2e73-ab00-c4d365a59f90",
 			"headers": "Content-Type: application/json\n",
 			"headerData": [
@@ -118,6 +154,29 @@
 			"rawModeData": "{\r\n  \"id\": 0,\r\n  \"name\": \"string\",\r\n  \"unit\": 0\r\n}"
 		},
 		{
+			"id": "ab78228c-071f-a0f3-2285-40c1669e63d3",
+			"headers": "",
+			"headerData": [],
+			"url": "{{domain}}/course",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "2461def6-63f6-2e40-0d0e-b78899060f78",
+			"data": null,
+			"dataMode": "params",
+			"name": "{{domain}}/course",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1622616945523,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
 			"id": "b13effaf-b05e-347c-fc8c-a3faa557c493",
 			"headers": "",
 			"headerData": [],
@@ -137,6 +196,83 @@
 			"description": "",
 			"collectionId": "2461def6-63f6-2e40-0d0e-b78899060f78",
 			"responses": []
+		},
+		{
+			"id": "d85e49e7-442b-8e00-4934-cabb5e436828",
+			"headers": "",
+			"headerData": [],
+			"url": "{{domain}}/course/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "2461def6-63f6-2e40-0d0e-b78899060f78",
+			"data": null,
+			"dataMode": "params",
+			"name": "{{domain}}/course/1",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1622616972715,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "eaff39ea-f46f-5c00-325a-d8c30067de31",
+			"headers": "",
+			"headerData": [],
+			"url": "{{domain}}/course/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "2461def6-63f6-2e40-0d0e-b78899060f78",
+			"data": null,
+			"dataMode": "params",
+			"name": "{{domain}}/course/1",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1622617016051,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "ee905b73-c980-4bf8-956f-4717214e9095",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{domain}}/course",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "2461def6-63f6-2e40-0d0e-b78899060f78",
+			"data": [],
+			"dataMode": "raw",
+			"name": "{{domain}}/course",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1622617075907,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n  \"id\": 0,\r\n  \"name\": \"string\",\r\n  \"unit\": 0\r\n}"
 		}
 	]
 }

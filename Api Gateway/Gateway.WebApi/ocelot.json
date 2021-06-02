@@ -26,27 +26,27 @@
       "UpstreamHttpMethod": [ "GET", "DELETE" ]
     },
     {
-      "DownstreamPathTemplate": "/api/customer",
+      "DownstreamPathTemplate": "/api/Course",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44373
+          "Port": 44393
         }
       ],
-      "UpstreamPathTemplate": "/gateway/customer",
+      "UpstreamPathTemplate": "/gateway/Course",
       "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
     },
     {
-      "DownstreamPathTemplate": "/api/customer/{id}",
+      "DownstreamPathTemplate": "/api/Course/{id}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44373
+          "Port": 44393
         }
       ],
-      "UpstreamPathTemplate": "/gateway/customer/{id}",
+      "UpstreamPathTemplate": "/gateway/Course/{id}",
       "UpstreamHttpMethod": [ "GET", "DELETE" ]
     }
   ]
