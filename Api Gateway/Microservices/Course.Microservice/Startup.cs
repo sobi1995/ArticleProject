@@ -43,9 +43,14 @@ namespace Course.Microservice
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "webapitest v1"));
+            
             }
-
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Baha'i Prayers API");
+                c.InjectStylesheet("/swagger/custom.css");
+                c.RoutePrefix = String.Empty;
+            });
             app.UseHttpsRedirection();
 
             app.UseRouting();
