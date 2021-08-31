@@ -31,7 +31,8 @@ namespace Versioning_ASP.Net_Core_3_APIs_with_Swashbuckle
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-        
+
+           
 
                 services.AddScoped<IProductService,ProductService>();
             services.AddControllers();

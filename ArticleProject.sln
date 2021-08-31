@@ -11,11 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api Gateway", "Api Gateway"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microservices", "Microservices", "{BAAE3A3D-A977-4977-BC23-B7AA60E5D466}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Course.Microservice", "Api Gateway\Microservices\Course.Microservice\Course.Microservice.csproj", "{FCAFD5B6-5E5D-43A8-96EC-92EFB5E7B23A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Course.Microservice", "Api Gateway\Microservices\Course.Microservice\Course.Microservice.csproj", "{FCAFD5B6-5E5D-43A8-96EC-92EFB5E7B23A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Student.Miroservice", "Api Gateway\Microservices\Student.Miroservice\Student.Miroservice.csproj", "{686DEE3A-99F1-4157-BCB2-FC7DAEEEF853}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Student.Miroservice", "Api Gateway\Microservices\Student.Miroservice\Student.Miroservice.csproj", "{686DEE3A-99F1-4157-BCB2-FC7DAEEEF853}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gateway.WebApi", "Api Gateway\Gateway.WebApi\Gateway.WebApi.csproj", "{67F5E662-7802-45D0-B052-B67DFA4866D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gateway.WebApi", "Api Gateway\Gateway.WebApi\Gateway.WebApi.csproj", "{67F5E662-7802-45D0-B052-B67DFA4866D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Design Pattern", "Design Pattern", "{C42FAAED-B9AD-4670-930A-A9EB6606C8F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator", "Design Pattern\Decorator\Decorator.csproj", "{07EE7CB7-063C-42E2-896F-4A223387092F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +79,18 @@ Global
 		{67F5E662-7802-45D0-B052-B67DFA4866D2}.Release|x64.Build.0 = Release|Any CPU
 		{67F5E662-7802-45D0-B052-B67DFA4866D2}.Release|x86.ActiveCfg = Release|Any CPU
 		{67F5E662-7802-45D0-B052-B67DFA4866D2}.Release|x86.Build.0 = Release|Any CPU
+		{07EE7CB7-063C-42E2-896F-4A223387092F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07EE7CB7-063C-42E2-896F-4A223387092F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07EE7CB7-063C-42E2-896F-4A223387092F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{07EE7CB7-063C-42E2-896F-4A223387092F}.Debug|x64.Build.0 = Debug|Any CPU
+		{07EE7CB7-063C-42E2-896F-4A223387092F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{07EE7CB7-063C-42E2-896F-4A223387092F}.Debug|x86.Build.0 = Debug|Any CPU
+		{07EE7CB7-063C-42E2-896F-4A223387092F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07EE7CB7-063C-42E2-896F-4A223387092F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07EE7CB7-063C-42E2-896F-4A223387092F}.Release|x64.ActiveCfg = Release|Any CPU
+		{07EE7CB7-063C-42E2-896F-4A223387092F}.Release|x64.Build.0 = Release|Any CPU
+		{07EE7CB7-063C-42E2-896F-4A223387092F}.Release|x86.ActiveCfg = Release|Any CPU
+		{07EE7CB7-063C-42E2-896F-4A223387092F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -85,6 +101,7 @@ Global
 		{FCAFD5B6-5E5D-43A8-96EC-92EFB5E7B23A} = {BAAE3A3D-A977-4977-BC23-B7AA60E5D466}
 		{686DEE3A-99F1-4157-BCB2-FC7DAEEEF853} = {BAAE3A3D-A977-4977-BC23-B7AA60E5D466}
 		{67F5E662-7802-45D0-B052-B67DFA4866D2} = {C189F3D9-00BF-4095-AA2B-D698823AC3AD}
+		{07EE7CB7-063C-42E2-896F-4A223387092F} = {C42FAAED-B9AD-4670-930A-A9EB6606C8F2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1918C16B-8C12-4C01-B477-DDF3C482A50C}
