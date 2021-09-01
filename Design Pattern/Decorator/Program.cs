@@ -8,34 +8,41 @@ namespace Decorator
     {
         static void Main(string[] args)
         {
-            CallWhithOutDecorator();
-            CallWhithDecorator();
-        }
+             // CallWhithOutDecorator();
+
+            //config with asp DI
+            //var collection = new ServiceCollection();
+            //collection.AddScoped<IPlayersService, PlayersService>();
+            //IServiceProvider serviceProvider = collection.BuildServiceProvider();
+            //var _playersService = serviceProvider.GetService<IPlayersService>();
+            //IPlayersService _playersServiceDecorator = new PlayersServiceLoggingDecorator(_playersService);
+            //var players = _playersServiceDecorator.GetPlayersList();
 
 
-     private static void  CallWhithDecorator()
-        {
             var collection = new ServiceCollection();
             collection.AddScoped<IPlayersService, PlayersService>();
+            collection.Decorate<IPlayersService, PlayersServiceCachingDecorator>();
+            collection.Decorate<IPlayersService, PlayersServiceLoggingDecorator>();
             IServiceProvider serviceProvider = collection.BuildServiceProvider();
             var _playersService = serviceProvider.GetService<IPlayersService>();
-            //var logger = serviceProvider.GetService<ILogger<PlayersServiceLoggingDecorator>>();
-            IPlayersService _playersServiceDecorator = new PlayersServiceLoggingDecorator(_playersService);
-            var players = _playersServiceDecorator.GetPlayersList();
-
-
+            var players = _playersService.GetPlayersList();
             foreach (var player in players)
             {
                 Console.WriteLine($"{player.Id} {player.Name}");
             }
 
+            Console.ReadKey();
+
         }
+
+
+ 
 
 
      private static void CallWhithOutDecorator()
      {
          var collection = new ServiceCollection();
-         collection.AddScoped<IPlayersService, PlayersService>();
+         collection.AddTransient<IPlayersService, PlayersService>();
          IServiceProvider serviceProvider = collection.BuildServiceProvider();
          var _playersService = serviceProvider.GetService<IPlayersService>();
          var players = _playersService.GetPlayersList();
@@ -44,6 +51,8 @@ namespace Decorator
              Console.WriteLine($"{player.Id} {player.Name}");
          }
 
-        }
+     }
+
+ 
     }
 }

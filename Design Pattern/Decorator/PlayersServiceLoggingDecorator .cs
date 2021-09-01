@@ -24,10 +24,7 @@ namespace Decorator
 
             IEnumerable<Player> players = _playersService.GetPlayersList();
 
-            foreach (var player in players)
-            {
-                Console.WriteLine("Player: " + player.Id + ", Name: " + player.Name);
-            }
+ 
 
             stopwatch.Stop();
 

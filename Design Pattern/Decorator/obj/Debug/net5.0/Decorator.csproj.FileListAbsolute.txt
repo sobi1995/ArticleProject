@@ -27,3 +27,6 @@ C:\Users\s.mozafari\Desktop\Trash\ArticleProject\Design Pattern\Decorator\bin\De
 C:\Users\s.mozafari\Desktop\Trash\ArticleProject\Design Pattern\Decorator\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
 C:\Users\s.mozafari\Desktop\Trash\ArticleProject\Design Pattern\Decorator\bin\Debug\net5.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 C:\Users\s.mozafari\Desktop\Trash\ArticleProject\Design Pattern\Decorator\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Users\s.mozafari\Desktop\Trash\ArticleProject\Design Pattern\Decorator\bin\Debug\net5.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\s.mozafari\Desktop\Trash\ArticleProject\Design Pattern\Decorator\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\s.mozafari\Desktop\Trash\ArticleProject\Design Pattern\Decorator\bin\Debug\net5.0\Scrutor.dll

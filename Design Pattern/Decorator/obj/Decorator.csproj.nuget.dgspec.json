@@ -41,6 +41,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.Extensions.Caching.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[5.0.2, )"
@@ -56,6 +60,10 @@
             "Microsoft.Extensions.Logging.Console": {
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "Scrutor": {
+              "target": "Package",
+              "version": "[3.3.0, )"
             }
           },
           "imports": [
