@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\s.mozafari\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\s.mozafari\\.nuget\\packages"
+      "C:\\Users\\sobi\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\sobi\\.nuget\\packages"
     ]
   }
 }

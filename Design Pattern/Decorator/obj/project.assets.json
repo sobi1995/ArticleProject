@@ -556,19 +556,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\s.mozafari\\.nuget\\packages\\": {}
+    "C:\\Users\\sobi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\s.mozafari\\Desktop\\Trash\\ArticleProject\\Design Pattern\\Decorator\\Decorator.csproj",
+      "projectUniqueName": "C:\\Users\\sobi\\Desktop\\Me\\ArticleProject\\Design Pattern\\Decorator\\Decorator.csproj",
       "projectName": "Decorator",
-      "projectPath": "C:\\Users\\s.mozafari\\Desktop\\Trash\\ArticleProject\\Design Pattern\\Decorator\\Decorator.csproj",
-      "packagesPath": "C:\\Users\\s.mozafari\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\s.mozafari\\Desktop\\Trash\\ArticleProject\\Design Pattern\\Decorator\\obj\\",
+      "projectPath": "C:\\Users\\sobi\\Desktop\\Me\\ArticleProject\\Design Pattern\\Decorator\\Decorator.csproj",
+      "packagesPath": "C:\\Users\\sobi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sobi\\Desktop\\Me\\ArticleProject\\Design Pattern\\Decorator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\s.mozafari\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sobi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -576,7 +576,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://azuredevops.asax.ir/tfs/AsaProjects/_packaging/Public/nuget/v3/index.json": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -635,7 +634,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
