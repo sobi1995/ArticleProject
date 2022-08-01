@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.6.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Versioning ASP.Net Core 3 APIs with Swashbuckle", "Versioning ASP.Net Core 3 APIs with Swashbuckle", "{24D3B88C-002B-4A63-B67B-160530E758E6}"
 EndProject
@@ -19,7 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gateway.WebApi", "Api Gatew
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Design Pattern", "Design Pattern", "{C42FAAED-B9AD-4670-930A-A9EB6606C8F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator", "Design Pattern\Decorator\Decorator.csproj", "{07EE7CB7-063C-42E2-896F-4A223387092F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Decorator", "Design Pattern\Decorator\Decorator.csproj", "{07EE7CB7-063C-42E2-896F-4A223387092F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GraphQL", "GraphQL", "{99260725-5A7B-406C-A8D0-6D8622BA869C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web.GraphQL", "GraphQL\Web.GraphQL.csproj", "{597B64D0-2E66-4CDB-8ED6-E672E84EA1F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -91,6 +95,18 @@ Global
 		{07EE7CB7-063C-42E2-896F-4A223387092F}.Release|x64.Build.0 = Release|Any CPU
 		{07EE7CB7-063C-42E2-896F-4A223387092F}.Release|x86.ActiveCfg = Release|Any CPU
 		{07EE7CB7-063C-42E2-896F-4A223387092F}.Release|x86.Build.0 = Release|Any CPU
+		{597B64D0-2E66-4CDB-8ED6-E672E84EA1F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{597B64D0-2E66-4CDB-8ED6-E672E84EA1F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{597B64D0-2E66-4CDB-8ED6-E672E84EA1F7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{597B64D0-2E66-4CDB-8ED6-E672E84EA1F7}.Debug|x64.Build.0 = Debug|Any CPU
+		{597B64D0-2E66-4CDB-8ED6-E672E84EA1F7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{597B64D0-2E66-4CDB-8ED6-E672E84EA1F7}.Debug|x86.Build.0 = Debug|Any CPU
+		{597B64D0-2E66-4CDB-8ED6-E672E84EA1F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{597B64D0-2E66-4CDB-8ED6-E672E84EA1F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{597B64D0-2E66-4CDB-8ED6-E672E84EA1F7}.Release|x64.ActiveCfg = Release|Any CPU
+		{597B64D0-2E66-4CDB-8ED6-E672E84EA1F7}.Release|x64.Build.0 = Release|Any CPU
+		{597B64D0-2E66-4CDB-8ED6-E672E84EA1F7}.Release|x86.ActiveCfg = Release|Any CPU
+		{597B64D0-2E66-4CDB-8ED6-E672E84EA1F7}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -102,6 +118,7 @@ Global
 		{686DEE3A-99F1-4157-BCB2-FC7DAEEEF853} = {BAAE3A3D-A977-4977-BC23-B7AA60E5D466}
 		{67F5E662-7802-45D0-B052-B67DFA4866D2} = {C189F3D9-00BF-4095-AA2B-D698823AC3AD}
 		{07EE7CB7-063C-42E2-896F-4A223387092F} = {C42FAAED-B9AD-4670-930A-A9EB6606C8F2}
+		{597B64D0-2E66-4CDB-8ED6-E672E84EA1F7} = {99260725-5A7B-406C-A8D0-6D8622BA869C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1918C16B-8C12-4C01-B477-DDF3C482A50C}

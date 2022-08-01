@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "CDvXrhNMRR3NZ3c/rDM5k/7eZuP+FSG1jUwiIHpsiP7z/+SSwH2JQGyAJ9rhJDimvOGX1TgKD0kt3kKVN8DGuA==",
+  "dgSpecHash": "6ks+Ext31fCfzgUANgCJ8Pb/JmacLozpCHiyI4SiqLCJdx5lIjmLw9uidltdt6GHgFNtVTMzMl6aFdiV9ZqJxw==",
   "success": true,
   "projectFilePath": "C:\\Users\\sobi\\Desktop\\Me\\ArticleProject\\Design Pattern\\Decorator\\Decorator.csproj",
   "expectedPackageFiles": [
@@ -18,7 +18,10 @@
     "C:\\Users\\sobi\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\sobi\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\5.0.0\\microsoft.extensions.options.configurationextensions.5.0.0.nupkg.sha512",
     "C:\\Users\\sobi\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\sobi\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\sobi\\.nuget\\packages\\scrutor\\3.3.0\\scrutor.3.3.0.nupkg.sha512",
+    "C:\\Users\\sobi\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "C:\\Users\\sobi\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
     "C:\\Users\\sobi\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
   ],
   "logs": []

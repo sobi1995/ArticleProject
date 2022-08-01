@@ -1,0 +1,7 @@
+C:\Users\sobi\Desktop\Me\ArticleProject\GraphQL\obj\Debug\net6.0\Graph-QL.csproj.AssemblyReference.cache
+C:\Users\sobi\Desktop\Me\ArticleProject\GraphQL\obj\Debug\net6.0\Graph-QL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sobi\Desktop\Me\ArticleProject\GraphQL\obj\Debug\net6.0\Graph-QL.AssemblyInfoInputs.cache
+C:\Users\sobi\Desktop\Me\ArticleProject\GraphQL\obj\Debug\net6.0\Graph-QL.AssemblyInfo.cs
+C:\Users\sobi\Desktop\Me\ArticleProject\GraphQL\obj\Debug\net6.0\Graph-QL.csproj.CoreCompileInputs.cache
+C:\Users\sobi\Desktop\Me\ArticleProject\GraphQL\obj\Debug\net6.0\Graph-QL.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\sobi\Desktop\Me\ArticleProject\GraphQL\obj\Debug\net6.0\Graph-QL.MvcApplicationPartsAssemblyInfo.cache
