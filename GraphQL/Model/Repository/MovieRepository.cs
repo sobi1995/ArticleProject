@@ -22,7 +22,7 @@ namespace GraphQL.Model.Repository
         public async Task<Movie> AddReviewToMovieAsync(Guid id, Review review)
         {
             var movie = await _context.Movie.Where(m => m.Id == id).FirstOrDefaultAsync();
-            movie.AddReview(review);
+            //movie.add(review);
             await _context.SaveChangesAsync();
             return movie;
         }

@@ -1,16 +1,18 @@
-﻿using GraphQL.Model.Entity;
+﻿using GraphQL.Model.Context;
+using GraphQL.Model.Entity;
 using GraphQL.Types;
 
 namespace Web.GraphQL.Model.GraphQl
 {
-    public class MovieQuery : ObjectGraphType
+        public class MovieQuery : ObjectGraphType
     {
-        public MovieQuery()
+        private readonly MovieContext _movieContext;
+        public MovieQuery(MovieContext movieContext)
         {
-            Field<ListGraphType<MovieType>>("notes", resolve: context => new List<Movie> {
-      new Movie { Id = Guid.NewGuid(), Name = "Hello World!" },
-      new Movie { Id = Guid.NewGuid(), Name = "Hello World! How are you?" }
-    });
+            this._movieContext = movieContext;
+            Name = "Query";
+            Field<ListGraphType<MovieType>>("movie", "Returns a list of Movie", resolve: context => _movieContext.Movie.ToList());
+  
         }
     }
 }

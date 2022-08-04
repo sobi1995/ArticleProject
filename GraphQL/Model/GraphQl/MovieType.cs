@@ -7,10 +7,11 @@ namespace Web.GraphQL.Model.GraphQl
     {
         public MovieType()
         {
-            Name = "Note";
-            Description = "Note Type";
-            Field(d => d.Id, nullable: false).Description("Note Id");
-            Field(d => d.Name, nullable: true).Description("Note Message");
+            Name = "Movie";
+            Description = "Movie Type";
+            
+            Field(d => d.Id, nullable: false).Description("Movie Id");
+            Field(d => d.Name, nullable: true).Description("Movie Name");
         }
     }
 }

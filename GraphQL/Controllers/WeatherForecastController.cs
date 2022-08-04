@@ -1,3 +1,5 @@
+using GraphQL.Model.Context;
+using GraphQL.Model.Entity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GraphQL.Controllers;
@@ -6,6 +8,7 @@ namespace GraphQL.Controllers;
 [Route("[controller]")]
 public class WeatherForecastController : ControllerBase
 {
+    private readonly MovieContext _movieContext;
     private static readonly string[] Summaries = new[]
     {
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
@@ -13,14 +16,16 @@ public class WeatherForecastController : ControllerBase
 
     private readonly ILogger<WeatherForecastController> _logger;
 
-    public WeatherForecastController(ILogger<WeatherForecastController> logger)
+    public WeatherForecastController(ILogger<WeatherForecastController> logger, MovieContext movieContext)
     {
         _logger = logger;
+        _movieContext = movieContext;
     }
 
     [HttpGet(Name = "GetWeatherForecast")]
     public IEnumerable<WeatherForecast> Get()
     {
+        var temp = _movieContext.Movie.Where(x=> x.Id== new Guid("72d95bfd-1dac-4bc2-adc1-f28fd43777fd"));
         return Enumerable.Range(1, 5).Select(index => new WeatherForecast
         {
             Date = DateTime.Now.AddDays(index),
@@ -29,4 +34,7 @@ public class WeatherForecastController : ControllerBase
         })
         .ToArray();
     }
+
+
+    
 }
