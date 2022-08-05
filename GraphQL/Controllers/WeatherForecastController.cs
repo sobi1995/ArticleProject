@@ -25,7 +25,7 @@ public class WeatherForecastController : ControllerBase
     [HttpGet(Name = "GetWeatherForecast")]
     public IEnumerable<WeatherForecast> Get()
     {
-        var temp = _movieContext.Movie.Where(x=> x.Id== new Guid("72d95bfd-1dac-4bc2-adc1-f28fd43777fd"));
+        var temp = _movieContext.Movie.Where(x=> x.Id== new Guid("72d95bfd-1dac-4bc2-adc1-f28fd43777fd")).FirstOrDefault();
        
         return Enumerable.Range(1, 5).Select(index => new WeatherForecast
         {

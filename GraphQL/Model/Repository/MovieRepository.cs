@@ -16,7 +16,7 @@ namespace GraphQL.Model.Repository
 
         public  List<Movie>  GetAll()
         {
-             
+            
             return _context.Movie.ToList();
         }
 

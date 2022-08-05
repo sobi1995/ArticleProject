@@ -12,6 +12,7 @@ namespace Web.GraphQL.Model.GraphQl
             
             Field(d => d.Id, nullable: false).Description("Movie Id");
             Field(d => d.Name, nullable: true).Description("Movie Name");
+            Field(d => d.Price, nullable: true).Description("Movie Price");
         }
     }
 }

@@ -15,10 +15,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
-builder.Services
-    .AddEntityFrameworkInMemoryDatabase()
-    .AddDbContext<MovieContext>(context => { context.UseInMemoryDatabase("MovieDb"); });
+string connString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<MovieContext>(options =>
+       options.UseSqlServer(
+           connString
+       ));
 
 builder.Services.AddScoped<IMovieRepository, MovieRepository>();
 
