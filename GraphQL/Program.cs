@@ -23,10 +23,9 @@ builder.Services
 builder.Services.AddScoped<IMovieRepository, MovieRepository>();
 
 
-
 // Add services to the container.
 // add notes schema
-builder.Services.AddSingleton<ISchema, MovieSchema>(services => new MovieSchema(new SelfActivatingServiceProvider(services)));
+builder.Services.AddScoped<ISchema, MovieSchema>(services => new MovieSchema(new SelfActivatingServiceProvider(services)));
 // register graphQL
 builder.Services.AddGraphQL(options =>
 {

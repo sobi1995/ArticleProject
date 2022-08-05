@@ -14,17 +14,17 @@ namespace GraphQL.Model.Repository
             _context.Database.EnsureCreated();
         }
 
+        public  List<Movie>  GetAll()
+        {
+             
+            return _context.Movie.ToList();
+        }
+
         public Task<Movie> GetMovieByIdAsync(Guid id)
         {
             return _context.Movie.Where(m => m.Id == id).AsNoTracking().FirstOrDefaultAsync();
         }
 
-        public async Task<Movie> AddReviewToMovieAsync(Guid id, Review review)
-        {
-            var movie = await _context.Movie.Where(m => m.Id == id).FirstOrDefaultAsync();
-            //movie.add(review);
-            await _context.SaveChangesAsync();
-            return movie;
-        }
+       
     }
 }

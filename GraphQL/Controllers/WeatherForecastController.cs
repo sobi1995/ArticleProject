@@ -26,6 +26,7 @@ public class WeatherForecastController : ControllerBase
     public IEnumerable<WeatherForecast> Get()
     {
         var temp = _movieContext.Movie.Where(x=> x.Id== new Guid("72d95bfd-1dac-4bc2-adc1-f28fd43777fd"));
+       
         return Enumerable.Range(1, 5).Select(index => new WeatherForecast
         {
             Date = DateTime.Now.AddDays(index),
