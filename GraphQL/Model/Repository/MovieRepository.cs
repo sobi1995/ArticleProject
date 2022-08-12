@@ -20,9 +20,9 @@ namespace GraphQL.Model.Repository
             return _context.Movie.ToList();
         }
 
-        public Task<Movie> GetMovieByIdAsync(Guid id)
+        public async Task<Movie> GetMovieByIdAsync(Guid id)
         {
-            return _context.Movie.Where(m => m.Id == id).AsNoTracking().FirstOrDefaultAsync();
+            return await _context.Movie.Where(m => m.Id == id).AsNoTracking().FirstOrDefaultAsync();
         }
 
        

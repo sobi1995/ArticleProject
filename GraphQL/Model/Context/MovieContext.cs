@@ -13,6 +13,7 @@ namespace GraphQL.Model.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
             //modelBuilder.Entity<Movie>().OwnsMany(m => m.Reviews).HasData(
             //    new Review
             //    {
