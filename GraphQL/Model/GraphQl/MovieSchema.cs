@@ -7,6 +7,7 @@ namespace Web.GraphQL.Model.GraphQl
             public MovieSchema(IServiceProvider serviceProvider) : base(serviceProvider)
             {
                 Query = serviceProvider.GetRequiredService<MovieQuery>();
+            
             }
         }
 }

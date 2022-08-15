@@ -5,7 +5,8 @@ namespace GraphQL.Model.Repository
     public interface IMovieRepository
     {
         Task<Movie> GetMovieByIdAsync(Guid id);
-         List<Movie>  GetAll();
+        Task<Movie> AddReviewToMovieAsync(Guid id, Review review);
+        Task<List<Movie>> GetAll();
    
     }
 }

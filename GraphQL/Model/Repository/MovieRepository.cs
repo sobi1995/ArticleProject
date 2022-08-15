@@ -14,10 +14,10 @@ namespace GraphQL.Model.Repository
             _context.Database.EnsureCreated();
         }
 
-        public  List<Movie>  GetAll()
+        public  async Task<List<Movie>>  GetAll()
         {
             
-            return _context.Movie.ToList();
+            return await _context.Movie.ToListAsync();
         }
 
         public async Task<Movie> GetMovieByIdAsync(Guid id)
@@ -25,6 +25,14 @@ namespace GraphQL.Model.Repository
             return await _context.Movie.Where(m => m.Id == id).AsNoTracking().FirstOrDefaultAsync();
         }
 
-       
+        public async Task<Movie> AddReviewToMovieAsync(Guid id, Review review)
+        {
+            var movie = await _context.Movie.Where(m => m.Id == id).FirstOrDefaultAsync();
+            movie.AddReview(review);
+            await _context.SaveChangesAsync();
+            return movie;
+        }
+
+
     }
 }
