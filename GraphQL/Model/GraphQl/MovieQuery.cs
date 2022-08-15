@@ -27,7 +27,7 @@ namespace Web.GraphQL.Model.GraphQl
                      Name = "id",
                      Description = "The unique GUID of the movie."
                  }),
-             context => _movieRepository.GetMovieByIdAsync(context.GetArgument("id", Guid.Empty)));
+             context =>     _movieRepository.GetMovieByIdAsync(context.GetArgument("id", Guid.Empty)));
 
         }
     }
